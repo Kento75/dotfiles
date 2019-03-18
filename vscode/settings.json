@@ -8,8 +8,16 @@
     },
     "emmet.triggerExpansionOnTab": true,
     "[javascript]": {
+      "prettier.printWidth": 80,
+      "prettier.tabWidth": 2,
+      "prettier.useFlowParser": false,
+      "prettier.singleQuote" : true,
+      "prettier.trailingComma": true,
+      "prettier.bracketSpacing": true,
+      "prettier.jsxBracketSameLine": false,
+      "prettier.parser": "babylon",
+      "prettier.semi": false,
+      "prettier.useTabs": false,
       "editor.formatOnSave": true
-    },
-    "prettier.singleQuote" : true
+    }
 }
-
