@@ -6,6 +6,12 @@
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
     },
-    "emmet.triggerExpansionOnTab": true
+    "emmet.triggerExpansionOnTab": true,
+    // JavaScriptでのみ保存時フォーマットを有効化
+    "[javascript]": {
+      "editor.formatOnSave": true
+    },
+    // prettierのシングルクオーテーションオプションをon
+    "prettier.singleQuote" : true
 }
 
