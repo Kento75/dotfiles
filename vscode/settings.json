@@ -3,24 +3,7 @@
     "editor.tabSize": 2,
     "explorer.confirmDragAndDrop": false,
     "workbench.iconTheme": "material-icon-theme",
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-    "emmet.triggerExpansionOnTab": true,
     "editor.formatOnSave": true,
-    "javascript.format.enable": true,
-    "prettier.eslintIntegration": true,
-    "prettier.printWidth": 80,
-    "prettier.tabWidth": 2,
-    "prettier.useFlowParser": false,
-    "prettier.singleQuote" : true,
-    "prettier.trailingComma": true,
-    "prettier.bracketSpacing": true,
-    "prettier.jsxBracketSameLine": false,
-    "prettier.parser": "babylon",
-    "prettier.semi": false,
-    "prettier.useTabs": false,
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnType": false
+    "javascript.format.enable": false,
+    "prettier.eslintIntegration": true
 }
