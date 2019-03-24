@@ -16,12 +16,15 @@ HookyQR.beautify
 ionutvmi.path-autocomplete
 mechatroner.rainbow-csv
 mrmlnc.vscode-duplicate
+ms-vscode.Go
 msjsdiag.debugger-for-chrome
+nitayneeman.puppeteer-snippets
 octref.vetur
+PeterJausovec.vscode-docker
 PKief.material-icon-theme
+schroeter.prettier-vscode-space-parenthesis
+shardulm94.trailing-spaces
 streetsidesoftware.code-spell-checker
 tombonnike.vscode-status-bar-format-toggle
 wix.vscode-import-cost
 xabikos.JavaScriptSnippets
-shardulm94.trailing-spaces
-schroeter.prettier-vscode-space-parenthesis
