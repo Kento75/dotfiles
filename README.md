@@ -25,3 +25,22 @@ mv ./keybindings.json ~/dotfiles/vscode/keybindings.json
 ln -s ~/dotfiles/vscode/settings.json ./settings.json
 ln -s ~/dotfiles/vscode/keybindings.json ./keybindings.json
 ```
+
+```
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.tabSize": 2,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.formatOnSave": false,
+    "javascript.format.enable": false,
+    "prettier.eslintIntegration": true,
+    "cSpell.userWords": [
+        "julienschmidt"
+    ],
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "go.gopath": "/Users/kento/code/golang",   ← ここは、GOPATHを設定するので、適宜ユーザー名を変更する
+    "go.formatOnSave": true
+}
+```
