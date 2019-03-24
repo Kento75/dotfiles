@@ -27,6 +27,7 @@ ln -s ~/dotfiles/vscode/keybindings.json ./keybindings.json
 ```
 
 ```
+# vscode/settings.json
 {
     "workbench.startupEditor": "newUntitledFile",
     "editor.tabSize": 2,
