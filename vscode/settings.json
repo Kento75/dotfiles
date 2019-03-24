@@ -3,7 +3,14 @@
     "editor.tabSize": 2,
     "explorer.confirmDragAndDrop": false,
     "workbench.iconTheme": "material-icon-theme",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "javascript.format.enable": false,
-    "prettier.eslintIntegration": true
+    "prettier.eslintIntegration": true,
+    "cSpell.userWords": [
+        "julienschmidt"
+    ],
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "go.gopath": "/Users/kento/code/golang",
+    "go.formatOnSave": true
 }
