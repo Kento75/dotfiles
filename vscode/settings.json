@@ -12,5 +12,8 @@
     "editor.formatOnPaste": false,
     "editor.formatOnType": false,
     "go.gopath": "/Users/kento/code/golang",
-    "go.formatOnSave": true
+    "go.formatOnSave": true,
+    "[go]": {
+        "editor.tabSize": 4
+    }
 }
