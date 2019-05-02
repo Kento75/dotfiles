@@ -5,6 +5,7 @@ rm settings.json
 ln -s ~/dotfiles/vscode/settings.json ./settings.json
 rm keybindings.json
 ln -s ~/dotfiles/vscode/keybindings.json ./keybindings.json
+rm ./snippets/Snippets.txt
 ln -s ~/dotfiles/vscode/Snippets.txt ./snippets/Snippets.txt
 
 cat ~/dotfiles/vscode/extensions | while read line
