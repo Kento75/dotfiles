@@ -50,6 +50,7 @@
     "[go]": {
         "editor.tabSize": 4
     },
+    "phpcs.standard": "PSR2",
     "explorer.confirmDelete": false
 }
 
