@@ -3,17 +3,38 @@
     "explorer.confirmDragAndDrop": false,
     "workbench.iconTheme": "material-icon-theme",
     "window.title": "${activeEditorLong}",
+    "window.zoomLevel": 0,
+    "cSpell.userWords": [
+        "julienschmidt"
+    ],
+    // Controls the rendering size of tabs in characters. Accepted values: "auto", 2, 4, 6, etc. If set to "auto", the value will be guessed when a file is opened.
+    "editor.tabSize": 2,
+    // Controls if the editor will insert spaces for tabs. Accepted values:  "auto", true, false. If set to "auto", the value will be guessed when a file is opened.
+    "editor.insertSpaces": true,
+    // Controls whether the editor should render whitespace characters
+    "editor.renderWhitespace": "all",
     "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": false,
     "javascript.format.enable": false,
+    "javascript.validate.enable": false,
     "eslint.enable": true,
     "eslint.nodePath": "/usr/local/var/nodebrew/node/v10.15.2/bin/eslint",
     "eslint.autoFixOnSave": true,
     "eslint.options": {
+        "env": {
+            "browser": true,
+            "commonjs": true,
+            "es6": true,
+            "node": true
+        },
+        "extends": "eslint:recommended",
         "parserOptions": {
             "ecmaVersion": 6,
             "sourceType": "module",
             "ecmaFeatures": {
-                "jsx": true
+                "jsx": true,
+                "js": true
             }
         },
         "rules": {
@@ -32,19 +53,14 @@
             "no-console": 0
         }
     },
-    // Controls the rendering size of tabs in characters. Accepted values: "auto", 2, 4, 6, etc. If set to "auto", the value will be guessed when a file is opened.
-    "editor.tabSize": 2,
-    // Controls if the editor will insert spaces for tabs. Accepted values:  "auto", true, false. If set to "auto", the value will be guessed when a file is opened.
-    "editor.insertSpaces": true,
-    // Controls whether the editor should render whitespace characters
-    "editor.renderWhitespace": "all",
-    "window.zoomLevel": 0,
     "prettier.eslintIntegration": true,
-    "cSpell.userWords": [
-        "julienschmidt"
-    ],
-    "editor.formatOnPaste": true,
-    "editor.formatOnType": false,
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            "wrap_attributes": "auto"
+        }
+    },
+    "vetur.format.defaultFormatter.ts": "vscode-typescript",
     "go.gopath": "/Users/kento/code/golang",
     "go.formatOnSave": true,
     "[go]": {
@@ -53,4 +69,3 @@
     "phpcs.standard": "PSR2",
     "explorer.confirmDelete": false
 }
-
