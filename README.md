@@ -1,5 +1,9 @@
 # dotfiles
 
+### 前提条件
+
+・Homebrew インストール済み
+
 ### セットアップ
 
 ```
@@ -10,7 +14,6 @@ cd ./dotfiles
 # セットアップshellを実行
 bash bootstrap.sh
 ```
-
 
 ### 移行メモ
 
@@ -33,17 +36,51 @@ ln -s ~/dotfiles/vscode/keybindings.json ./keybindings.json
     "explorer.confirmDragAndDrop": false,
     "workbench.iconTheme": "material-icon-theme",
     "window.title": "${activeEditorLong}",
+    "window.zoomLevel": 0,
+    "cSpell.userWords": [
+        "julienschmidt"
+    ],
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [{
+            "name": "Chrome",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}/src",
+            "sourceMapPathOverrides": {
+                "webpack:///src/*": "${webRoot}/*"
+            }
+        }]
+    },
+    // Controls the rendering size of tabs in characters. Accepted values: "auto", 2, 4, 6, etc. If set to "auto", the value will be guessed when a file is opened.
+    "editor.tabSize": 2,
+    // Controls if the editor will insert spaces for tabs. Accepted values:  "auto", true, false. If set to "auto", the value will be guessed when a file is opened.
+    "editor.insertSpaces": true,
+    // Controls whether the editor should render whitespace characters
+    "editor.renderWhitespace": "all",
     "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": false,
     "javascript.format.enable": false,
+    "javascript.validate.enable": false,
     "eslint.enable": true,
     "eslint.nodePath": "/usr/local/var/nodebrew/node/v10.15.2/bin/eslint",  ← ここは、グローバルにインストールしたESLintのパスを指定
     "eslint.autoFixOnSave": true,
     "eslint.options": {
+        "env": {
+            "browser": true,
+            "commonjs": true,
+            "es6": true,
+            "node": true
+        },
+        "extends": "eslint:recommended",
         "parserOptions": {
             "ecmaVersion": 6,
             "sourceType": "module",
             "ecmaFeatures": {
-                "jsx": true
+                "jsx": true,
+                "js": true
             }
         },
         "rules": {
@@ -62,24 +99,20 @@ ln -s ~/dotfiles/vscode/keybindings.json ./keybindings.json
             "no-console": 0
         }
     },
-    // Controls the rendering size of tabs in characters. Accepted values: "auto", 2, 4, 6, etc. If set to "auto", the value will be guessed when a file is opened.
-    "editor.tabSize": 2,
-    // Controls if the editor will insert spaces for tabs. Accepted values:  "auto", true, false. If set to "auto", the value will be guessed when a file is opened.
-    "editor.insertSpaces": true,
-    // Controls whether the editor should render whitespace characters
-    "editor.renderWhitespace": "all",
-    "window.zoomLevel": 0,
     "prettier.eslintIntegration": true,
-    "cSpell.userWords": [
-        "julienschmidt"
-    ],
-    "editor.formatOnPaste": true,
-    "editor.formatOnType": false,
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            "wrap_attributes": "auto"
+        }
+    },
+    "vetur.format.defaultFormatter.ts": "vscode-typescript",
     "go.gopath": "/Users/kento/code/golang",  ← ここは、GOPATHを設定するので、適宜ユーザー名を変更する
     "go.formatOnSave": true,
     "[go]": {
         "editor.tabSize": 4
     },
+    "phpcs.standard": "PSR2",
     "explorer.confirmDelete": false
 }
 ```
