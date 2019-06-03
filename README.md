@@ -1,21 +1,27 @@
 # dotfiles
 
-### 前提条件
+### 色々インストール
+
+```
+bash install.sh
+```
+
+### VScode セットアップ
+
+#### 前提条件
 
 ・Homebrew インストール済み
-
-### セットアップ
 
 ```
 # homeに設定ファイルをダウンロード
 cd ~
 git clone https://github.com/Kento75/dotfiles.git
 cd ./dotfiles
-# セットアップshellを実行
-bash bootstrap.sh
+# VScodeセットアップshellを実行
+bash editor-setup.sh
 ```
 
-### 移行メモ
+### VScode 移行メモ
 
 ```
 # = 現在の設定があるPCでの操作

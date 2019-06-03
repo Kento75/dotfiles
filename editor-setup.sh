@@ -1,9 +1,5 @@
 #!bin/sh -ex
 
-# Install VScode
-brew update
-brew cask install visual-studio-code
-
 # Install Extensions
 cat ~/dotfiles/vscode/extensions | while read line
 do
