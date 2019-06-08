@@ -90,6 +90,9 @@ brew install tree
 # Install Git
 brew install git
 
+# Install Slack
+brew cask install slack
+
 # Install VirtualBox
 brew cask install virtualbox
 
