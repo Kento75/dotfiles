@@ -114,3 +114,9 @@ brew install ansible
 
 # Install Postman
 brew cask install postman
+
+# Install Table Plus
+brew cask install tableplus
+
+echo "Fin"
+
