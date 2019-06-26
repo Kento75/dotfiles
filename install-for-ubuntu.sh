@@ -26,7 +26,7 @@ brew uninstall --ignore-dependencies node
 
 # Install OpenJDK(version 8) And Gradle
 brew cask install java8
-export JAVA_HOME=`/usr/libexec/java_home -v 8`
+export JAVA_HOME=`/home/linuxbrew/.linuxbrew/Cellar/java8`
 PATH=${JAVA_HOME}/bin:${PATH}
 echo "${PATH}" >> ~/.bashrc
 source ~/.bashrc
