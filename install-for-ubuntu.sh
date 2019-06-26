@@ -4,11 +4,8 @@
 echo 'export PATH=/usr/local:$PATH' >> ~/.bashrc
 echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bashrc
 
-### Install Xcode devtools
-xcode-select --install
-
 ### Install Nodebrew
-brew install-binary nodebrew
+brew install nodebrew
 nodebrew setup
 echo "export PATH=\$HOME/.nodebrew/current/bin:\$PATH" >> ~/.bashrc
 source ~/.bashrc
@@ -28,7 +25,7 @@ brew upgrade yarn
 brew uninstall --ignore-dependencies node
 
 # Install OpenJDK(version 8) And Gradle
-brew cask install java11
+brew cask install java8
 export JAVA_HOME=`/usr/libexec/java_home -v 8`
 PATH=${JAVA_HOME}/bin:${PATH}
 echo "${PATH}" >> ~/.bashrc
