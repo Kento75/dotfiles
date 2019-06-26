@@ -25,8 +25,8 @@ brew upgrade yarn
 brew uninstall --ignore-dependencies node
 
 # Install OpenJDK(version 8) And Gradle
-brew cask install java8
-export JAVA_HOME=`/home/linuxbrew/.linuxbrew/Cellar/java8`
+brew install java8
+export JAVA_HOME=`/usr/libexec/java_home -v 8`
 PATH=${JAVA_HOME}/bin:${PATH}
 echo "${PATH}" >> ~/.bashrc
 source ~/.bashrc
@@ -55,20 +55,20 @@ source ~/.bashrc
 ### Install Editer
 
 # Install VScode
-brew cask install visual-studio-code
+brew install visual-studio-code
 
 # Install Intellij IDEA(CE)
-brew cask install intellij-idea-ce
+brew install intellij-idea-ce
 
 # Install Android Studio
-brew cask install android-studio
+brew install android-studio
 
 
 
 ### Install Tools
 
 # Install Google Chrome
-brew cask install google-chrome
+brew install google-chrome
 
 # Install tree
 brew install tree
@@ -77,32 +77,32 @@ brew install tree
 brew install git
 
 # Install Slack
-brew cask install slack
+brew install slack
 
 # Install VirtualBox
-brew cask install virtualbox
+brew install virtualbox
 
 # Install Vagrant
-brew cask install vagrant
+brew install vagrant
 
 # Install Docker
-brew cask install docker
+brew install docker
 docker --version
 
 # Install docker-compose
 brew install docker-compose
 
 # Install Kitematic
-brew cask install kitematic
+brew install kitematic
 
 # Install Ansible
 brew install ansible
 
 # Install Postman
-brew cask install postman
+brew install postman
 
 # Install Table Plus
-brew cask install tableplus
+brew install tableplus
 
 echo "Fin"
 
