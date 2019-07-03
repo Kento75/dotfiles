@@ -120,3 +120,12 @@ brew cask install tableplus
 
 echo "Fin"
 
+
+
+## AWS Secure Settings
+
+# install git-secrets
+brew install git-secrets
+git secrets --register-aws --global
+git secrets --install ~/.git-templates/git-secrets
+git config --global init.templatedir '~/.git-templates/git-secrets'

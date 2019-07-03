@@ -3,7 +3,6 @@
     "explorer.confirmDragAndDrop": false,
     "workbench.iconTheme": "material-icon-theme",
     "window.title": "${activeEditorLong}",
-    "window.zoomLevel": 0,
     "cSpell.userWords": [
         "julienschmidt"
     ],
@@ -80,5 +79,6 @@
         "editor.tabSize": 4
     },
     "phpcs.standard": "PSR2",
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "editor.fontSize": 16
 }
