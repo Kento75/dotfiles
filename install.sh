@@ -118,8 +118,9 @@ brew cask install postman
 # Install Table Plus
 brew cask install tableplus
 
-echo "Fin"
 
+## AWS tools
+pip install aws-sam-cli
 
 
 ## AWS Secure Settings
@@ -129,3 +130,6 @@ brew install git-secrets
 git secrets --register-aws --global
 git secrets --install ~/.git-templates/git-secrets
 git config --global init.templatedir '~/.git-templates/git-secrets'
+
+
+echo "Fin"
