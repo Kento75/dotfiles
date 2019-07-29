@@ -81,5 +81,6 @@
     "phpcs.standard": "PSR2",
     "explorer.confirmDelete": false,
     "editor.fontSize": 16,
-    "aws.profile": "default"
+    "aws.profile": "default",
+    "aws.samcli.location": "/Users/kento/.pyenv/shims/sam"
 }
