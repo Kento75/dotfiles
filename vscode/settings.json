@@ -82,5 +82,13 @@
     "explorer.confirmDelete": false,
     "editor.fontSize": 16,
     "aws.profile": "default",
-    "aws.samcli.location": "/Users/kento/.pyenv/shims/sam"
+    "aws.samcli.location": "/Users/kento/.pyenv/shims/sam",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    }
 }
