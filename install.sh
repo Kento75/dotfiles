@@ -90,6 +90,9 @@ brew install tree
 # Install Git
 brew install git
 
+# Install Sourcetree
+brew cask install sourcetree
+
 # Install Slack
 brew cask install slack
 
