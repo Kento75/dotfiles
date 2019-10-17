@@ -27,8 +27,8 @@
     "editor.insertSpaces": true,
     // Controls whether the editor should render whitespace characters
     "editor.renderWhitespace": "all",
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
     "editor.formatOnType": false,
     "javascript.format.enable": false,
     "javascript.validate.enable": false,
@@ -96,5 +96,6 @@
     "[java]": {
         "editor.tabSize": 4
     },
-    "java.errors.incompleteClasspath.severity": "ignore"
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "window.zoomLevel": 0
 }
