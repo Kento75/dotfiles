@@ -106,6 +106,10 @@ brew cask install android-studio
 echo "############ Install Tools ############"
 echo ""
 
+# Install Iterm2
+echo "######### Install Iterm2 ########"
+brew cask install iterm2
+
 # Install Google Chrome
 echo "#########  Install Google Chrome  #########"
 brew cask install google-chrome

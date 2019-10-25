@@ -27,9 +27,9 @@
     "editor.insertSpaces": true,
     // Controls whether the editor should render whitespace characters
     "editor.renderWhitespace": "all",
-    "editor.formatOnSave": false,
-    "editor.formatOnPaste": false,
-    "editor.formatOnType": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
     "javascript.format.enable": false,
     "javascript.validate.enable": false,
     "eslint.enable": true,
