@@ -5,104 +5,103 @@ echo 'export PATH=/usr/local:$PATH' >> ~/.bashrc
 echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bashrc
 
 ### Install Nodebrew
-brew install nodebrew
-nodebrew setup
-echo "export PATH=\$HOME/.nodebrew/current/bin:\$PATH" >> ~/.bashrc
-source ~/.bashrc
-mkdir -p ~/.nodebrew/src
+#brew install nodebrew
+#nodebrew setup
+#echo "export PATH=\$HOME/.nodebrew/current/bin:\$PATH" >> ~/.bashrc
+#source ~/.bashrc
+#mkdir -p ~/.nodebrew/src
 
 
 
 ### Install Programing Langage
 
 # Install Nodejs
-nodebrew install-binary latest
-nodebrew use latest
+#nodebrew install-binary latest
+#nodebrew use latest
 
 # Install yarn package manager
-brew install yarn --ignore-dependencies
-brew upgrade yarn
-brew uninstall --ignore-dependencies node
+#brew install yarn --ignore-dependencies
+#brew upgrade yarn
+#brew uninstall --ignore-dependencies node
 
 # Install OpenJDK(version 8) And Gradle
-brew install java8
-export JAVA_HOME="/home/linuxbrew/.linuxbrew/bin/java"
-PATH=${JAVA_HOME}/bin:${PATH}
-echo "${PATH}" >> ~/.bashrc
-source ~/.bashrc
-brew install gradle
+#brew install java8
+#export JAVA_HOME="/home/linuxbrew/.linuxbrew/bin/java"
+#PATH=${JAVA_HOME}/bin:${PATH}
+#echo "${PATH}" >> ~/.bashrc
+#source ~/.bashrc
+#brew install gradle
 
 # Install Kotlin
-brew install kotlin
-echo 'export PATH=/usr/local/bin/kotlinc/bin:$PATH' >> ~/.bashrc
-source ~/.bashrc
+#brew install kotlin
+#echo 'export PATH=/usr/local/bin/kotlinc/bin:$PATH' >> ~/.bashrc
+#source ~/.bashrc
 
 # Install Golang
-brew install go
-echo 'export GOROOT=/usr/local/opt/go/libexec' >> ~/.bashrc
-echo 'export GOPATH=$HOME' >> ~/.bashrc
-echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> ~/.bashrc
-source ~/.bashrc
+#brew install go
+#echo 'export GOROOT=/usr/local/opt/go/libexec' >> ~/.bashrc
+#echo 'export GOPATH=$HOME' >> ~/.bashrc
+#echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> ~/.bashrc
+#source ~/.bashrc
 
 # Install Composer(useing default PHP7)
-brew install composer
-composer global require "squizlabs/php_codesniffer=*"
-echo 'export PATH=$HOME/.composer/vendor/bin:$PATH' >> ~/.bashrc
-source ~/.bashrc
+#brew install composer
+#composer global require "squizlabs/php_codesniffer=*"
+#echo 'export PATH=$HOME/.composer/vendor/bin:$PATH' >> ~/.bashrc
+#source ~/.bashrc
 
 
 
 ### Install Editer
 
 # Install VScode
-brew install visual-studio-code
+#brew install visual-studio-code
 
 # Install Intellij IDEA(CE)
-brew install intellij-idea-ce
+#brew install intellij-idea-ce
 
 # Install Android Studio
-brew install android-studio
+#brew install android-studio
 
 
 
 ### Install Tools
 
 # Install Google Chrome
-brew install google-chrome
+#brew install google-chrome
 
 # Install tree
-brew install tree
+#brew install tree
 
 # Install Git
-brew install git
+#brew install git
 
 # Install Slack
-brew install slack
+#brew install slack
 
 # Install VirtualBox
-brew install virtualbox
+#brew install virtualbox
 
 # Install Vagrant
-brew install vagrant
+#brew install vagrant
 
 # Install Docker
-brew install docker
-docker --version
+#brew install docker
+#docker --version
 
 # Install docker-compose
-brew install docker-compose
+#brew install docker-compose
 
 # Install Kitematic
-brew install kitematic
+#brew install kitematic
 
 # Install Ansible
-brew install ansible
+#brew install ansible
 
 # Install Postman
-brew install postman
+#brew install postman
 
 # Install Table Plus
-brew install tableplus
+#brew install tableplus
 
 echo "Fin"
-
