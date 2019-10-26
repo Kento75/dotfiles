@@ -4,6 +4,11 @@
 echo 'export PATH=/usr/local:$PATH' >> ~/.bashrc
 echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bashrc
 
+### Install Security Tools
+echo "Install Security Tools"
+echo ""
+apt-get install -y clamav
+
 ### Install Nodebrew
 #brew install nodebrew
 #nodebrew setup
@@ -53,6 +58,10 @@ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bashrc
 
 
 ### Install Editer
+
+
+# Install Vim
+apt-get install -y vim
 
 # Install VScode
 #brew install visual-studio-code
