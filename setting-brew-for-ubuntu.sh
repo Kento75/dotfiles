@@ -39,6 +39,8 @@ echo "export PATH='/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbi
 echo 'PATH="$HOME/.linuxbrew/bin:$PATH"' >> ~/.bashrc
 echo 'export MANPATH="$(brew --prefix)/share/man:$MANPATH"' >> ~/.bashrc
 echo 'export INFOPATH="$(brew --prefix)/share/info:$INFOPATH"' >> ~/.bashrc
+echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' >> ~/.bash_profile
+echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' >> ~/.bash_profile
 
 sudo chmod -R 777 /home/linuxbrew/.linuxbrew/bin/
 source ~/.bashrc
