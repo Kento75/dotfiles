@@ -1,5 +1,10 @@
 #!bin/sh -ex
 
+### Install Requirement Tools
+echo "Install apt-transport-https"
+echo ""
+sudo apt-get install -y apt-transport-https
+
 ### Install Security Tools
 echo "Install Security Tools"
 echo ""
@@ -19,6 +24,8 @@ mkdir -p ~/.nodebrew/src
 ### Install Programing Langage
 
 # Install Nodejs
+echo "Install Node"
+echo ""
 nodebrew install-binary latest
 nodebrew install-binary stable
 nodebrew use stable
@@ -29,6 +36,8 @@ nodebrew use stable
 #brew uninstall --ignore-dependencies node
 
 # Install OpenJDK(version 8) And Gradle
+echo "Install JDK8 And Gradle"
+echo ""
 brew install java8
 export JAVA_HOME="/home/linuxbrew/.linuxbrew/bin/java"
 PATH=${JAVA_HOME}/bin:${PATH}
@@ -37,11 +46,15 @@ source ~/.bashrc
 brew install gradle
 
 # Install Kotlin
+echo "Install Kotlin"
+echo ""
 brew install kotlin
 echo 'export PATH=/usr/local/bin/kotlinc/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 
 # Install Golang
+echo "Install Golang"
+echo ""
 brew install go
 echo 'export GOROOT=/usr/local/opt/go/libexec' >> ~/.bashrc
 echo 'export GOPATH=$HOME' >> ~/.bashrc
@@ -49,6 +62,8 @@ echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> ~/.bashrc
 source ~/.bashrc
 
 # Install Composer(useing default PHP7)
+echo "Install Composer"
+echo ""
 brew install composer
 composer global require "squizlabs/php_codesniffer=*"
 echo 'export PATH=$HOME/.composer/vendor/bin:$PATH' >> ~/.bashrc
@@ -65,6 +80,13 @@ echo ""
 sudo apt-get install -y vim
 
 # Install VScode
+echo "Install VScode"
+echo ""
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+sudo apt-get update
+sudo apt-get install -y code
 
 # Install Intellij IDEA(CE)
 
@@ -77,6 +99,8 @@ sudo apt-get install -y vim
 # Install Google Chrome
 
 # Install tree
+echo "Install tree"
+echo ""
 brew install tree
 
 # Install Docker
@@ -86,6 +110,8 @@ brew install tree
 # Install Kitematic
 
 # Install Ansible
+echo "Install Ansible"
+echo ""
 brew install ansible
 
 # Install Table Plus
