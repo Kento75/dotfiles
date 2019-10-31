@@ -42,6 +42,10 @@ brew install java8
 export JAVA_HOME="/home/linuxbrew/.linuxbrew/bin/java"
 PATH=${JAVA_HOME}/bin:${PATH}
 echo "${PATH}" >> ~/.bashrc
+
+sudo apt -y install qemu-kvm adb openjdk-8-jdk openjdk-11-jdk default-jdk 
+sudo gpasswd -a "${USER}" kvm
+
 source ~/.bashrc
 brew install gradle
 
@@ -89,6 +93,9 @@ sudo apt-get update
 sudo apt-get install -y code
 
 # Install Intellij IDEA(CE)
+echo "Install Intellij IDEA(CE)"
+echo ""
+sudo snap install intellij-idea-community --classic
 
 # Install Android Studio
 
