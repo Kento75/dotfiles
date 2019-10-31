@@ -117,6 +117,9 @@ echo ""
 brew install tree
 
 # Install Docker
+echo "Install docker"
+echo ""
+brew install docker
 
 # Install docker-compose
 
