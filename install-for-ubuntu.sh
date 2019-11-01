@@ -131,8 +131,21 @@ sudo apt-get install -y docker-ce
 sudo usermod -aG docker $USER
 
 # Install docker-compose
+brew install docker-compose
 
 # Install Kitematic
+sudo apt-get install gconf2-common  gconf-service-backend libgconf-2-4 gconf2 gconf-service
+
+wget https://github.com/docker/kitematic/archive/v0.17.9.zip
+unzip v0.17.9.zip
+
+cd  kitematic-0.17.9/
+make install
+# いらないかも↓
+npm run build
+npm run release:debian:x64
+cd dist
+sudo dpkg -i Kitematic-0.17.9_amd64.deb
 
 # Install Ansible
 echo "Install Ansible"
