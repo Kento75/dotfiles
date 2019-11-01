@@ -129,6 +129,9 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-get install -y docker-ce
 sudo usermod -aG docker $USER
+sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+sudo chmod g+rwx "/home/$USER/.docker" -R
+sudo gpasswd -a $USER docker
 
 # Install docker-compose
 brew install docker-compose
@@ -147,11 +150,24 @@ npm run release:debian:x64
 cd dist
 sudo dpkg -i Kitematic-0.17.9_amd64.deb
 
+cd ../../
+rm -rf ./kitematic-0.17.9
+rm -rf ./v0.17.9.zip
+
 # Install Ansible
 echo "Install Ansible"
 echo ""
 brew install ansible
 
 # Install Table Plus
+# not support... :p
+
+# Install Sqlectron
+echo "Install Sqlectron"
+echo "" 
+wget https://github.com/sqlectron/sqlectron-gui/releases/download/v1.30.0/Sqlectron_1.30.0_amd64.deb
+sudo apt-get install ./Sqlectron_1.30.0_amd64.deb
+rm -rf Sqlectron_1.30.0_amd64.deb
 
 echo "Fin"
+
