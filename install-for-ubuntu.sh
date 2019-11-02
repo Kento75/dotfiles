@@ -169,5 +169,11 @@ wget https://github.com/sqlectron/sqlectron-gui/releases/download/v1.30.0/Sqlect
 sudo apt-get install ./Sqlectron_1.30.0_amd64.deb
 rm -rf Sqlectron_1.30.0_amd64.deb
 
+# Install Typora
+wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
+sudo add-apt-repository 'deb https://typora.io/linux ./'
+sudo apt-get update
+sudo apt-get install typora
+
 echo "Fin"
 
