@@ -185,5 +185,19 @@ sudo add-apt-repository 'deb https://typora.io/linux ./'
 sudo apt-get update
 sudo apt-get install -y typora
 
+# Install aws-cli
+echo "Install aws-cli"
+echo ""
+sudo pip install -y awscli
+
+# Install Terraform
+echo "Install Terraform"
+echo ""
+wget https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip
+unzip terraform_0.11.13_linux_amd64.zip
+rm -rf terraform_0.11.13_linux_amd64.zip
+sudo cp terraform /usr/local/bin
+rm -rf terraform
+
 echo "Fin"
 
