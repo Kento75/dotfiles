@@ -154,6 +154,16 @@ cd ../../
 rm -rf ./kitematic-0.17.9
 rm -rf ./v0.17.9.zip
 
+# Install VirtualBox
+echo "Install VirtualBox"
+echo ""
+sudo apt-get install -y virtualbox
+
+# Install Vagrant
+echo "Install Vagrant"
+echo ""
+sudo apt-get install -y vagrant
+
 # Install Ansible
 echo "Install Ansible"
 echo ""
