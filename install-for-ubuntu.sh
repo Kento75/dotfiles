@@ -185,6 +185,9 @@ sudo add-apt-repository 'deb https://typora.io/linux ./'
 sudo apt-get update
 sudo apt-get install -y typora
 
+# Install Pinta
+sudo apt-get install -y pinta
+
 # Install aws-cli
 echo "Install aws-cli"
 echo ""
