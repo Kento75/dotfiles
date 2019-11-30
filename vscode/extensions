@@ -45,3 +45,5 @@ ms-vscode-remote.vs-code-remote-extensionpack
 eamodio.gitlens
 dsteenman.cloudformation-yaml-snippets
 aws-scripting-guy.cform
+kddejong.vscode-cfn-lint
+
