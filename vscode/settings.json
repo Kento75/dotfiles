@@ -125,5 +125,6 @@
         "!Select sequence",
         "!Split",
         "!Split sequence"
-    ]
+    ],
+    "yaml.validate": false
 }

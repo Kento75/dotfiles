@@ -92,6 +92,9 @@ echo ""
 echo "#########  Install VScode  #########"
 brew cask install visual-studio-code
 
+echo "Install cfn-lint"
+pip install cfn-lint
+
 # Install Intellij IDEA(CE)
 echo "#########  Install Intellij IDEA(CE)  #########"
 brew cask install intellij-idea-ce

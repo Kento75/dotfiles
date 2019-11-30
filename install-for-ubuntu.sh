@@ -92,6 +92,11 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode s
 sudo apt-get update
 sudo apt-get install -y code
 
+# cfn-plugin requirement modules
+echo "Install cfn-lint"
+echo ""
+pip install cfn-lint
+
 # Install Intellij IDEA(CE)
 echo "Install Intellij IDEA(CE)"
 echo ""
