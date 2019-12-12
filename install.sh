@@ -163,8 +163,8 @@ echo "#########  Install Postman  #########"
 brew cask install postman
 
 # Install Table Plus
-#echo "#########  Install Table Plus  #########"
-#brew cask install tableplus
+echo "#########  Install Table Plus  #########"
+brew cask install tableplus
 
 # Install Sqlectron
 echo "#########  Install Sqlectron  #########"
