@@ -159,7 +159,9 @@ echo "#########  Install Ansible  #########"
 brew install ansible
 
 # Install Terraform
+echo "########  Install Terraform  #########"
 brew install terraform
+brew install tfenv
 
 # Install Postman
 echo "#########  Install Postman  #########"
