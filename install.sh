@@ -158,6 +158,9 @@ brew cask install kitematic
 echo "#########  Install Ansible  #########"
 brew install ansible
 
+# Install Terraform
+brew install terraform
+
 # Install Postman
 echo "#########  Install Postman  #########"
 brew cask install postman
