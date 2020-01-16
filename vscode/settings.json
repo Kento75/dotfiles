@@ -126,5 +126,10 @@
         "!Split",
         "!Split sequence"
     ],
-    "yaml.validate": false
+    "yaml.validate": false,
+    [terraform]: {
+        "editor.formatOnSave": true
+    },
+    "terraform.lintPath": "tflint"
 }
+

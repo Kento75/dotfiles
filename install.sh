@@ -162,6 +162,7 @@ brew install ansible
 echo "########  Install Terraform  #########"
 brew install terraform
 brew install tfenv
+brew install tflint
 
 # Install Postman
 echo "#########  Install Postman  #########"
