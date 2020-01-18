@@ -47,4 +47,5 @@ dsteenman.cloudformation-yaml-snippets
 aws-scripting-guy.cform
 kddejong.vscode-cfn-lint
 mauve.terraform
+erd0s.terraform-autocomplete
 
