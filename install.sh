@@ -52,6 +52,11 @@ brew install yarn --ignore-dependencies
 brew upgrade yarn
 brew uninstall --ignore-dependencies node
 
+# Install TypeScript
+echo "#########  Install TypeScript  #########"
+npm install -g typescript
+npm install -g ts-node
+
 # Install OpenJDK(version 11) And Gradle
 echo "#########  Install OpenJDK(version 11) And Gradle  #########"
 brew cask install java11
