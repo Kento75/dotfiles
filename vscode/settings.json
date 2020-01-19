@@ -26,12 +26,14 @@
     // Controls if the editor will insert spaces for tabs. Accepted values:  "auto", true, false. If set to "auto", the value will be guessed when a file is opened.
     "editor.insertSpaces": true,
     // Controls whether the editor should render whitespace characters
+    "editor.tabSize": 2,
     "editor.renderWhitespace": "all",
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.formatOnType": true,
     "javascript.format.enable": false,
     "javascript.validate.enable": false,
+    "prettier.jsxSingleQuote": true,
     "eslint.enable": true,
     "eslint.nodePath": "/usr/local/var/nodebrew/node/v10.15.2/bin/eslint",
     "eslint.autoFixOnSave": true,
