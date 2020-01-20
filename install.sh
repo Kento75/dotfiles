@@ -56,6 +56,8 @@ brew uninstall --ignore-dependencies node
 echo "#########  Install TypeScript  #########"
 npm install -g typescript
 npm install -g ts-node
+# bundler
+npm install -g parcel-bundler
 
 # Install OpenJDK(version 11) And Gradle
 echo "#########  Install OpenJDK(version 11) And Gradle  #########"
