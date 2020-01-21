@@ -26,6 +26,8 @@
     // Controls if the editor will insert spaces for tabs. Accepted values:  "auto", true, false. If set to "auto", the value will be guessed when a file is opened.
     "editor.insertSpaces": true,
     // Controls whether the editor should render whitespace characters
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
     "editor.tabSize": 2,
     "editor.renderWhitespace": "all",
     "editor.formatOnSave": true,
