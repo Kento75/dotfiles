@@ -170,6 +170,8 @@ echo "########  Install Terraform  #########"
 brew install terraform
 brew install tfenv
 brew install tflint
+terraform -install-autocomplete
+echo 'plugin_cache_dir = "$HOME/.terraform.d/plugin-cache"' > ~/.terraformrc
 
 # Install Postman
 echo "#########  Install Postman  #########"
