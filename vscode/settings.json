@@ -84,6 +84,9 @@
         "editor.tabSize": 4
     },
     "phpcs.standard": "PSR2",
+    "php-cs-fixer.rules": "@PSR2",
+    "php-cs-fixer.onsave": true,
+    "php-cs-fixer.formatHtml": false,
     "explorer.confirmDelete": false,
     "editor.fontSize": 16,
     "aws.profile": "default",

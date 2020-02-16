@@ -99,8 +99,18 @@ echo ""
 echo "#########  Install VScode  #########"
 brew cask install visual-studio-code
 
+echo "#########  Install cfn-lint  #########"
 echo "Install cfn-lint"
+echo ""
 pip install cfn-lint
+echo ""
+
+echo "#########  Install PHP Coding Standards Fixer  #########"
+echo ""
+curl -L http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar -o php-cs-fixer
+sudo chmod a+x php-cs-fixer
+sudo mv php-cs-fixer /usr/local/bin/php-cs-fixer
+echo ""
 
 # Install Intellij IDEA(CE)
 echo "#########  Install Intellij IDEA(CE)  #########"
