@@ -83,6 +83,7 @@
     "[go]": {
         "editor.tabSize": 4
     },
+    "php-cs-fixer.executablePath": "~/dotfiles/vscode/php-cs-fixer-v2.phar",
     "phpcs.standard": "PSR2",
     "php-cs-fixer.rules": "@PSR2",
     "php-cs-fixer.onsave": true,
