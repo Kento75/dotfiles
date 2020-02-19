@@ -86,7 +86,7 @@
     "php-cs-fixer.executablePath": "~/dotfiles/vscode/php-cs-fixer-v2.phar",
     "phpcs.standard": "PSR2",
     "php-cs-fixer.rules": "@PSR2",
-    "php-cs-fixer.onsave": true,
+    "php-cs-fixer.onsave": false,
     "php-cs-fixer.formatHtml": false,
     "explorer.confirmDelete": false,
     "editor.fontSize": 16,

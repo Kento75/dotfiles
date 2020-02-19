@@ -211,6 +211,23 @@ git secrets --register-aws --global
 git secrets --install ~/.git-templates/git-secrets
 git config --global init.templatedir '~/.git-templates/git-secrets'
 
+### Bash Settings
+echo "#########  bash color schema settings  #########"
+
+#for bash_completion
+echo 'if [ -f $(brew --prefix)/etc/bash_completion ]; then' >> ~/.bashrc
+echo '  source $(brew --prefix)/etc/bash_completion' >> ~/.bashrc
+echo 'fi' >> ~/.bashrc
+
+# ls color
+echo "alias ls='ls -G'" >> ~/.bashrc
+
+# git ps1
+echo "source /usr/local/etc/bash_completion.d/git-prompt.sh" >> ~/.bashrc
+echo "source /usr/local/etc/bash_completion.d/git-completion.bash" >> ~/.bashrc
+echo "GIT_PS1_SHOWDIRTYSTATE=true" >> ~/.bashrc
+echo "export PS1='\[\033[37m\][\[\033[36m\]\u\[\033[37m\]@\h \[\033[32m\]\W\[\033[37m\]]\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '" >> ~/.bashrc
+
 echo "#############################"
 echo "###########  Fin  ###########"
 echo "#############################"
