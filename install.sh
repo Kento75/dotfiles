@@ -195,6 +195,11 @@ brew cask install tableplus
 echo "#########  Install Sqlectron  #########"
 brew cask install Sqlectron
 
+# Install graphviz
+#cho "#########  Install graphviz   #########"
+brew install graphviz
+echo ""
+
 ## AWS tools
 echo "#########  AWS tools  #########"
 pip install aws-sam-cli
