@@ -43,6 +43,7 @@ vscjava.vscode-java-pack
 samuelcolvin.jinjahtml
 ms-vscode-remote.vs-code-remote-extensionpack
 eamodio.gitlens
+mhutchie.git-graph
 dsteenman.cloudformation-yaml-snippets
 aws-scripting-guy.cform
 kddejong.vscode-cfn-lint
@@ -50,4 +51,5 @@ mauve.terraform
 k--kato.intellij-idea-keybindings
 firsttris.vscode-jest-runner
 higoka.php-cs-fixer
+ms-vscode-remote.vscode-remote-extensionpack
 
