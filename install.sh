@@ -203,7 +203,7 @@ echo ""
 ## AWS tools
 echo "#########  AWS tools  #########"
 pip install aws-sam-cli
-
+pip install cfn-lint
 
 ### AWS Secure Settings
 echo "############ AWS Secure Settings ############"

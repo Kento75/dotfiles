@@ -135,7 +135,7 @@
         "!Split sequence"
     ],
     "yaml.validate": false,
-    [terraform]: {
+    "[terraform]": {
         "editor.formatOnSave": true
     },
     "terraform.lintPath": "tflint"
