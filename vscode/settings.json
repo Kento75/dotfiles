@@ -1,4 +1,5 @@
 {
+    "remote.SSH.connectTimeout": 150,
     "workbench.startupEditor": "newUntitledFile",
     "explorer.confirmDragAndDrop": false,
     "workbench.iconTheme": "material-icon-theme",
@@ -90,7 +91,7 @@
     "php-cs-fixer.formatHtml": false,
     "explorer.confirmDelete": false,
     "editor.fontSize": 16,
-    "aws.profile": "default",
+    "aws.profile": "profile:default",
     "aws.samcli.location": "/Users/kento/.pyenv/shims/sam",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -138,6 +139,7 @@
     "[terraform]": {
         "editor.formatOnSave": true
     },
-    "terraform.lintPath": "tflint"
+    "terraform.lintPath": "tflint",
+    "files.saveConflictResolution": "overwriteFileOnDisk"
 }
 
