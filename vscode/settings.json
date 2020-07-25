@@ -82,7 +82,8 @@
     "go.gopath": "/Users/kento/code/golang",
     "go.formatOnSave": true,
     "[go]": {
-        "editor.tabSize": 4
+        "editor.tabSize": 4,
+        "editor.formatOnSave": false
     },
     "php-cs-fixer.executablePath": "~/dotfiles/vscode/php-cs-fixer-v2.phar",
     "phpcs.standard": "PSR2",
