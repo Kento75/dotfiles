@@ -1,4 +1,5 @@
 {
+    "editor.detectIndentation": false,
     "remote.SSH.connectTimeout": 150,
     "workbench.startupEditor": "newUntitledFile",
     "explorer.confirmDragAndDrop": false,
@@ -30,6 +31,7 @@
     "editor.fontSize": 16,
     "terminal.integrated.fontSize": 16,
     "editor.tabSize": 2,
+    "editor.insertSpaces": true,
     "editor.renderWhitespace": "all",
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
@@ -83,7 +85,6 @@
     "go.formatOnSave": true,
     "[go]": {
         "editor.tabSize": 2,
-        "editor.insertSpaces": true,
         "go.formatTool": "gofmt"
     },
     "php-cs-fixer.executablePath": "~/dotfiles/vscode/php-cs-fixer-v2.phar",
