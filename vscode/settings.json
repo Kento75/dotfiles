@@ -83,6 +83,7 @@
     "vetur.format.defaultFormatter.ts": "vscode-typescript",
     "go.gopath": "/Users/kento/code/golang",
     "go.formatOnSave": true,
+    "go.formatTool": "gofmt",
     "[go]": {
         "editor.tabSize": 2,
         "go.formatTool": "gofmt"
@@ -143,6 +144,7 @@
         "editor.formatOnSave": true
     },
     "terraform.lintPath": "tflint",
-    "files.saveConflictResolution": "overwriteFileOnDisk"
+    "files.saveConflictResolution": "overwriteFileOnDisk",
+    "go.formatTool": "gofmt"
 }
 
