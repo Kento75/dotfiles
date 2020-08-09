@@ -81,12 +81,37 @@
         }
     },
     "vetur.format.defaultFormatter.ts": "vscode-typescript",
-    "go.gopath": "/Users/kento/code/golang",
+    "go.useLanguageServer": true,
+    "go.alternateTools": {
+        "go-langserver": "gopls"
+    },
+    "go.languageServerExperimentalFeatures": {
+        "format": true,
+        "autoComplete": true,
+        "rename": true,
+        "goToDefinition": true,
+        "hover": true,
+        "signatureHelp": true,
+        "goToTypeDefinition": true,
+        "goToImplementation": true,
+        "documentSymbols": true,
+        "workspaceSymbols": true,
+        "findReferences": true,
+        "diagnostics": true
+    },
     "go.formatOnSave": true,
     "go.formatTool": "gofmt",
     "[go]": {
         "editor.tabSize": 2,
-        "go.formatTool": "gofmt"
+        "editor.snippetSuggestions": "none",
+        "go.formatTool": "gofmt",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "gopls": {
+        "usePlaceholders": false,
+        "enhancedHover": false
     },
     "php-cs-fixer.executablePath": "~/dotfiles/vscode/php-cs-fixer-v2.phar",
     "phpcs.standard": "PSR2",
@@ -145,6 +170,7 @@
     },
     "terraform.lintPath": "tflint",
     "files.saveConflictResolution": "overwriteFileOnDisk",
-    "go.formatTool": "gofmt"
+    "go.formatTool": "gofmt",
+    "python.languageServer": "Microsoft"
 }
 
