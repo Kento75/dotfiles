@@ -1,0 +1,35 @@
+ALIASES_DIR=".direnv/aliases"
+
+# 各ディレクトリでカスタムコマンドを実行できるようにするやつ
+# 各 ディレクトリの.envrcに設定
+# 例) attachというコマンドを設定
+#
+#clear_direnv_aliases
+#
+#attach() {
+#  docker exec -it $1 /bin/bash
+#}
+#
+#export_function attach
+#
+
+
+export_function() {
+  local name=$1
+  local alias_dir=$PWD/${ALIASES_DIR}
+  mkdir -p "$alias_dir"
+  PATH_add "$alias_dir"
+  local target="$alias_dir/$name"
+  if declare -f "$name" >/dev/null; then
+    echo "#!/usr/bin/env bash" > "$target"
+    declare -f "$name" >> "$target" 2>/dev/null
+    echo "$name" '"$@"' >> "$target"
+    chmod +x "$target"
+  fi
+}
+
+clear_direnv_aliases() {
+  local alias_dir=$PWD/${ALIASES_DIR}
+  rm -rf $alias_dir/*
+}
+
