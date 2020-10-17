@@ -200,6 +200,11 @@ brew cask install Sqlectron
 brew install graphviz
 echo ""
 
+# Install biscuit
+#cho "#########  Install biscuit   #########"
+brew cask install biscuit
+echo ""
+
 ## AWS tools
 echo "#########  AWS tools  #########"
 pip install aws-sam-cli
