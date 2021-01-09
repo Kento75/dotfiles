@@ -7,11 +7,11 @@ do
 done
 
 # Connect Setting files
-cd ~/Library/Application\ Support/Code/User/
-unlink ./settings.json
-ln -s ~/dotfiles/vscode/settings.json ./settings.json
-unlink ./keybindings.json
-ln -s ~/dotfiles/vscode/keybindings.json ./keybindings.json
-mkdir snippets
-unlink ./snippets/Snippets.txt
-ln -s ~/dotfiles/vscode/Snippets.txt ./snippets/Snippets.txt
+#cd ~/Library/Application\ Support/Code/User/
+#unlink ./settings.json
+#ln -s ~/dotfiles/vscode/settings.json ./settings.json
+#unlink ./keybindings.json
+#ln -s ~/dotfiles/vscode/keybindings.json ./keybindings.json
+#mkdir snippets
+#unlink ./snippets/Snippets.txt
+#ln -s ~/dotfiles/vscode/Snippets.txt ./snippets/Snippets.txt
